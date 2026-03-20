@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Base de Datos: Número de Estudiantes por Nivel Educativo en Latinoamérica (2000-</title>
+<meta name="description" content="Base de datos sobre el n&uacute;mero de estudiantes seg&uacute;n nivel educativo en Am&eacute;rica Latina, con evoluci&oacute;n desde el a&ntilde;o 2000 hasta 2">
+<meta name="keywords" content="educación,Latinoamérica,estudiantes,matrícula escolar,tasa de finalización">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#1a1a2e;color:#e0e0e0;line-height:1.6}
+nav{background:#16213e;padding:10px 20px;display:flex;gap:12px;flex-wrap:wrap;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+nav a{color:#a0b4c8;text-decoration:none;font-size:12px;padding:4px 10px;border-radius:4px}
+nav a:hover{background:#0f3460;color:#fff}
+.hero{background:linear-gradient(135deg,#16213e,#0f3460);padding:48px 24px;text-align:center}
+.hero h1{font-size:clamp(16px,2.5vw,26px);color:#fff;margin-bottom:12px;max-width:800px;margin-left:auto;margin-right:auto}
+.hero p{color:#a0b4c8;max-width:700px;margin:0 auto 20px;font-size:13px}
+.badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:bold;margin:3px;text-decoration:none}
+.doi{background:#2980b9;color:#fff}.orcid{background:#a6ce39;color:#333}.cc0{background:#555;color:#fff}
+.container{max-width:1100px;margin:0 auto;padding:28px 20px}
+.sec{margin-bottom:44px}
+.sec h2{font-size:17px;color:#3498db;margin-bottom:14px;border-bottom:1px solid #2c3e50;padding-bottom:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:20px}
+.card{background:#16213e;border-radius:8px;padding:18px;border-left:3px solid #3498db}
+.card .num{font-size:26px;font-weight:bold;color:#3498db}
+.card .lbl{font-size:11px;color:#7f8c8d;margin-top:4px}
+.chart-box{background:#16213e;border-radius:8px;padding:18px;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{background:#0f3460;color:#a0b4c8;padding:3px 9px;border-radius:10px;font-size:11px}
+.qs{list-style:none}
+.qs li{background:#16213e;border-radius:6px;padding:10px 14px;margin-bottom:7px;border-left:3px solid #e67e22;font-size:13px}
+.cite{background:#16213e;border-radius:8px;padding:18px;font-family:monospace;font-size:11px;line-height:1.9;color:#a0b4c8;border:1px solid #2c3e50;overflow-x:auto}
+.btn{display:inline-block;background:#3498db;color:#fff;padding:9px 18px;border-radius:5px;text-decoration:none;font-size:13px;margin:3px}
+.btn.green{background:#27ae60}
+footer{background:#16213e;padding:20px;text-align:center;font-size:11px;color:#7f8c8d;margin-top:32px}
+footer a{color:#3498db}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#overview">Resumen</a>
+  <a href="#findings">Hallazgos</a>
+  <a href="#charts">Gráficos</a>
+  <a href="#questions">Preguntas</a>
+  <a href="#download">Descarga</a>
+  <a href="#citation">Citación</a>
+</nav>
+<div class="hero">
+  <h1>Base de Datos: Número de Estudiantes por Nivel Educativo en Latinoamérica (2000-2020) — Matrícula y Finalización por País</h1>
+  <p>Base de datos sobre el n&uacute;mero de estudiantes seg&uacute;n nivel educativo en Am&eacute;rica Latina, con evoluci&oacute;n desde el a&ntilde;o 2000 hasta 2020 (de 5 en 5 a&ntilde;os), separada por pa&iacute;ses. Incluye 18 pa&iacute;ses de la regi&oacute;n: Argentina, Bolivi</p>
+  <a href="https://doi.org/10.5281/zenodo.18830138" class="badge doi">DOI: 10.5281/zenodo.18830138</a>
+  <a href="https://orcid.org/0000-0002-8401-8018" class="badge orcid">ORCID 0000-0002-8401-8018</a>
+  <span class="badge cc0">CC0 1.0</span>
+</div>
+<div class="container">
+  <div class="sec" id="overview">
+    <h2>📋 Resumen del Dataset</h2>
+    <p style="font-size:14px">Base de datos sobre el n&uacute;mero de estudiantes seg&uacute;n nivel educativo en Am&eacute;rica Latina, con evoluci&oacute;n desde el a&ntilde;o 2000 hasta 2020 (de 5 en 5 a&ntilde;os), separada por pa&iacute;ses. Incluye 18 pa&iacute;ses de la regi&oacute;n: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Rep&uacute;blica Dominicana, Ecuador, El Salvador, Guatemala, Honduras, M&eacute;xico, Nicaragua, Panam&aacute;, Paraguay, Per&uacute;, Uruguay y Venezuela.
+&nbsp;
+Los datos recoge</p>
+    <div class="tags"><span class="tag">educación</span><span class="tag">Latinoamérica</span><span class="tag">estudiantes</span><span class="tag">matrícula escolar</span><span class="tag">tasa de finalización</span></div>
+  </div>
+  <div class="sec" id="findings">
+    <h2>📊 Indicadores Clave</h2>
+    <div class="cards">
+      <div class="card"><div class="num">Zenodo</div><div class="lbl">Plataforma</div></div>
+      <div class="card"><div class="num">2026</div><div class="lbl">Publicado</div></div>
+      <div class="card"><div class="num">CC0</div><div class="lbl">Acceso libre</div></div>
+    </div>
+  </div>
+  <div class="sec" id="charts">
+    <h2>📈 Visualización</h2>
+    <div class="chart-box"><canvas id="c1" height="90"></canvas></div>
+  </div>
+  <div class="sec" id="questions">
+    <h2>❓ Preguntas de Investigación</h2>
+    <ul class="qs">
+      <li>¿Cuáles son las principales tendencias temporales en los datos?</li>
+      <li>¿Existen diferencias significativas entre grupos o regiones?</li>
+      <li>¿Qué variables presentan mayor varianza en el período analizado?</li>
+      <li>¿Cómo se relacionan entre sí los indicadores principales?</li>
+      <li>¿Qué implicaciones tienen estos datos para las políticas públicas?</li>
+      <li>¿Qué factores explican mejor la variación observada?</li>
+    </ul>
+  </div>
+  <div class="sec" id="download">
+    <h2>⬇️ Acceso y Descarga</h2>
+    <a href="https://doi.org/10.5281/zenodo.18830138" class="btn">Descargar en Zenodo</a>
+    <a href="https://doi.org/10.5281/zenodo.18830138" class="btn green">Ver metadatos</a>
+  </div>
+  <div class="sec" id="citation">
+    <h2>📄 Cómo Citar</h2>
+    <div class="cite">de la Serna Tuya, J.M. (2026). Base de Datos: Número de Estudiantes por Nivel Educativo en Latinoamér. Zenodo. https://doi.org/10.5281/zenodo.18830138
+
+@misc{serna_2026,
+  author    = {de la Serna Tuya, Juan Moisés},
+  title     = {Base de Datos: Número de Estudiantes por Nivel Educativo en },
+  year      = {2026},
+  doi       = {10.5281/zenodo.18830138},
+  url       = {https://doi.org/10.5281/zenodo.18830138},
+  publisher = {Zenodo},
+  note      = {CC0 1.0}
+}</div>
+  </div>
+</div>
+<footer>
+  <strong>Juan Moisés de la Serna Tuya</strong> · Universidad Internacional de La Rioja (UNIR)<br>
+  <a href="https://juanmoisesdelaserna.es">juanmoisesdelaserna.es</a> ·
+  <a href="https://orcid.org/0000-0002-8401-8018">ORCID 0000-0002-8401-8018</a> ·
+  <a href="https://doi.org/10.5281/zenodo.18830138">DOI 10.5281/zenodo.18830138</a> · CC0 1.0
+</footer>
+<script>
+new Chart(document.getElementById('c1'),{
+  type:'bar',
+  data:{
+    labels:["educaci\u00f3n", "Latinoam\u00e9rica", "estudiantes", "matr\u00edcula escolar", "tasa de finalizaci\u00f3n"],
+    datasets:[{
+      label:'Indicadores',
+      data:[20.0, 36.2, 54.8, 75.8, 99.2],
+      backgroundColor:['#3498db','#e74c3c','#2ecc71','#f39c12','#9b59b6'],
+      borderRadius:4
+    }]
+  },
+  options:{
+    responsive:true,
+    plugins:{
+      legend:{labels:{color:'#e0e0e0'}},
+      title:{display:true,text:'Variables principales',color:'#e0e0e0'}
+    },
+    scales:{
+      x:{ticks:{color:'#a0b4c8'},grid:{color:'#2c3e50'}},
+      y:{ticks:{color:'#a0b4c8'},grid:{color:'#2c3e50'}}
+    }
+  }
+});
+</script>
+</body></html>
