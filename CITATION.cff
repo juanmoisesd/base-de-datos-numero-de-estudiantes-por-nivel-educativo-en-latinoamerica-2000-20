@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this dataset using the metadata below."
+type: dataset
+title: "Base de Datos: Número de Estudiantes por Nivel Educativo en Latinoamérica (2000-2020) — Matrícula y Finalización por País"
+authors:
+  - family-names: "de la Serna Tuya"
+    given-names: "Juan Moisés"
+    orcid: "https://orcid.org/0000-0002-8401-8018"
+    affiliation: "Universidad Internacional de La Rioja (UNIR)"
+doi: "10.5281/zenodo.18830138"
+url: "https://doi.org/10.5281/zenodo.18830138"
+repository-code: "https://github.com/juanmoisesd/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20"
+license: CC0-1.0
+date-released: "2026-03-02"
+keywords:
+  - "educación"
+  - "Latinoamérica"
+  - "estudiantes"
+  - "matrícula escolar"
+  - "tasa de finalización"
