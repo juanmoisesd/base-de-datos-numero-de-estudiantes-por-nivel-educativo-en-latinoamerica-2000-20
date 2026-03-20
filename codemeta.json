@@ -1,0 +1,23 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "Dataset",
+  "name": "Base de Datos: N\u00famero de Estudiantes por Nivel Educativo en Latinoam\u00e9rica (2000-2020) \u2014 Matr\u00edcula y Finalizaci\u00f3n por Pa\u00eds",
+  "identifier": "10.5281/zenodo.18830138",
+  "url": "https://doi.org/10.5281/zenodo.18830138",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Juan Mois\u00e9s",
+      "familyName": "de la Serna Tuya",
+      "@id": "https://orcid.org/0000-0002-8401-8018"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "keywords": [
+    "educaci\u00f3n",
+    "Latinoam\u00e9rica",
+    "estudiantes",
+    "matr\u00edcula escolar",
+    "tasa de finalizaci\u00f3n"
+  ]
+}
