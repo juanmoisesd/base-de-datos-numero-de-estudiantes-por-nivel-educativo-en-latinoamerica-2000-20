@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juanmoisesd.github.io/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20/sitemap.xml
+
+# Research dataset by Juan Moisés de la Serna Tuya
+# ORCID: 0000-0002-8401-8018
+# https://www.linkedin.com/in/juanmoisesdelaserna/
+# Universidad Internacional de La Rioja (UNIR)
