@@ -1,23 +1,42 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
-  "@type": "Dataset",
-  "name": "Base de Datos: N\u00famero de Estudiantes por Nivel Educativo en Latinoam\u00e9rica (2000-2020) \u2014 Matr\u00edcula y Finalizaci\u00f3n por Pa\u00eds",
-  "identifier": "10.5281/zenodo.18830138",
-  "url": "https://doi.org/10.5281/zenodo.18830138",
+  "@type": "SoftwareSourceCode",
+  "name": "Base de datos sobre el n&uacute;mero de estudiantes seg&uacute;n nivel educativo en Am&eacute;rica Latina, con evoluci&oacute;n desde el a&ntilde;o 2000 hasta 2020 (de 5 en 5 a&ntilde;os), separada por pa&iacute;ses. Incluye 18 pa&iacute;ses de la re",
+  "description": "Base de datos sobre el n&uacute;mero de estudiantes seg&uacute;n nivel educativo en Am&eacute;rica Latina, con evoluci&oacute;n desde el a&ntilde;o 2000 hasta 2020 (de 5 en 5 a&ntilde;os), separada por pa&iacute;ses. Incluye 18 pa&iacute;ses de la re",
+  "url": "https://github.com/juanmoisesd/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20",
+  "codeRepository": "https://github.com/juanmoisesd/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20",
+  "dateCreated": "2026-03-20",
+  "dateModified": "2026-03-20",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "version": "1.0.0",
   "author": [
     {
       "@type": "Person",
-      "givenName": "Juan Mois\u00e9s",
+      "givenName": "Juan Moisés",
       "familyName": "de la Serna Tuya",
-      "@id": "https://orcid.org/0000-0002-8401-8018"
+      "@id": "https://orcid.org/0000-0002-8401-8018",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad Internacional de La Rioja (UNIR)"
+      },
+      "email": "juanmoises.delaserna@unir.net"
     }
   ],
-  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "keywords": [
-    "educaci\u00f3n",
-    "Latinoam\u00e9rica",
-    "estudiantes",
-    "matr\u00edcula escolar",
-    "tasa de finalizaci\u00f3n"
-  ]
+    "open-data",
+    "dataset",
+    "research"
+  ],
+  "programmingLanguage": "HTML",
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Juan Moisés",
+      "familyName": "de la Serna Tuya"
+    }
+  ],
+  "funder": {
+    "@type": "Organization",
+    "name": "Universidad Internacional de La Rioja (UNIR)"
+  }
 }
