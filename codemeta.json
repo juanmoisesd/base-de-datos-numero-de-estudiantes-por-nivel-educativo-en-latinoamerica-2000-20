@@ -3,24 +3,18 @@
   "@type": "SoftwareSourceCode",
   "name": "Base de datos sobre el n&uacute;mero de estudiantes seg&uacute;n nivel educativo en Am&eacute;rica L",
   "version": "1.0.0",
-  "identifier": "https://github.com/juanmoisesd/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20",
-  "datePublished": "2025",
+  "identifier": "https://juanmoisesd.github.io/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "codeRepository": "https://github.com/juanmoisesd/base-de-datos-numero-de-estudiantes-por-nivel-educativo-en-latinoamerica-2000-20",
   "author": [
     {
       "@type": "Person",
       "givenName": "Juan Moisés",
-      "familyName": "de la Serna",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Universidad Internacional de La Rioja (UNIR)"
-      }
+      "familyName": "de la Serna"
     }
   ],
   "programmingLanguage": [
     "Python",
     "Jupyter Notebook"
-  ],
-  "keywords": "cc0, citation, dataset, fair-data, iberoamerica, juan-moises-de-la-serna, latam, latin-america, open-data, open-science, orcid, research, zenodo"
+  ]
 }
